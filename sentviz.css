@@ -1,0 +1,61 @@
+.bar {
+  fill: #C80000;
+}
+
+.bar:hover {
+  fill: #FF9966;
+  opacity: 0.8;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+text {
+  font: 10px "Roboto Condensed" sans-serif;
+}
+
+.x.axis path {
+  display: none;
+}
+
+
+.d3-tip {
+  font: 15px "Roboto Condensed";
+  line-height: 1;
+  visibility: visible;
+  font-weight: bold;
+  left: 370px;
+  position: fixed;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 20px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
