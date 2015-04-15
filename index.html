@@ -11,7 +11,7 @@ var tip = d3.tip()
   .attr('class', 'd3-tip')
   .style("position", "absolute")
   .offset(function() {
-    return [this.getBBox().height - 90]
+    return [this.getBBox().height - 120]
   })
   .html(function(d) {
     text = "<span style='color:#C80000'>Common phrases</span><br><br>";
